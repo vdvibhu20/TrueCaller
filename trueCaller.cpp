@@ -46,9 +46,8 @@ public:
 			number/= 10;
 
 			if(insertNumber(root-> children[root-> childCount- 1], number, string)){
-			
-			root-> children[root-> childCount-1]->name= new char[strlen(string)+ 1];
-			strcpy(root->children[(root->childCount)-1]->name, string);
+				root-> children[root-> childCount-1]->name= new char[strlen(string)+ 1];
+				strcpy(root->children[(root->childCount)-1]->name, string);
 			}
 
 			return false;
@@ -68,10 +67,9 @@ public:
 		number/= 10;
 		
 		if(insertNumber(root-> children[root-> childCount- 1], number, string)){
-			
 			root-> children[root-> childCount-1]->name= new char[strlen(string)+ 1];
 			strcpy(root->children[(root->childCount)-1]->name, string);
-			}
+		}
 
 		
 		return false;
@@ -135,8 +133,7 @@ int main(){
 		cout<< "1) Enter new contact."<< endl;
 		cout<< "2) Search a contact."<< endl;
 		cout<< "3) Exit."<< endl;
-		// cout<< "1) Enter new contact."
-		// cout<< "1) Enter new contact."
+		
 		cin>> q;
 		ch= cin.get();
 
@@ -165,14 +162,6 @@ int main(){
 		q=0;
 	}
 	
-	// char arr[6]= "vibhu";
-	// char arr2[6]= "pp";
-	// long int no= 9958397988;
-	// long int no2= 9810896665;
-	// t.insertNumber(root, no2, arr2);
-	// t.insertNumber(root, no, arr);
-	// t.search(root, no);
-	// t.search(root, no2);
 	
 	delete root;
 
